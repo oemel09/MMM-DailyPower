@@ -34,3 +34,12 @@ The following properties can be configured:
 | `showImage`       | `true`        | Display an image for the daily verse or keep the space
 | `blackAndWhite`   | `true`        | Black and White image or keep the colors
 
+## Available translations
+This page lists all available translations: https://dailypower.oemel09.de/api/v1/translations
+
+Use the `code` as the `translation` in the config.
+
+## Credits
+- Translations are powered by: https://getbible.net/
+- Pictures are from: https://pixabay.com/
+- MagicMirror: https://github.com/MichMich/MagicMirror/
