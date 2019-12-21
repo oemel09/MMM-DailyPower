@@ -9,15 +9,17 @@ Module.register('MMM-DailyPower', {
         blackAndWhite: true,
     },
 
-    start: function() {
-        const payload = {
-            translation: this.config.translation
-        };
+    notificationReceived: function(notification, payload, sender) {
+        if (notification === 'MODULE_DOM_CREATED') {
+            const payload = {
+                translation: this.config.translation
+            };
 
-        this.sendSocketNotification('DAILY_POWER_LOAD_VERSE', payload);
-        setInterval(() => {
             this.sendSocketNotification('DAILY_POWER_LOAD_VERSE', payload);
-        }, 1000 * 60 * 60);
+            setInterval(() => {
+                this.sendSocketNotification('DAILY_POWER_LOAD_VERSE', payload);
+            }, 1000 * 60 * 60);
+        }
     },
 
     getStyles: function() {
