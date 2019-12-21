@@ -1,0 +1,25 @@
+.image {
+    width: 100%;
+}
+
+.blackAndWhite {
+    filter: grayscale(100%);
+}
+
+p {
+    line-height: 1.3em;
+    font-weight: 300;
+    margin: 4px;
+}
+
+.card {
+
+}
+
+.content {
+    text-align: left;
+}
+
+.reference {
+    text-align: right;
+}
