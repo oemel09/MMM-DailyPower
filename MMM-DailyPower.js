@@ -56,7 +56,6 @@ Module.register('MMM-DailyPower', {
 
     createVerseCard: function() {
         const card = document.createElement('div');
-        card.classList.add('card');
         const content = document.createElement('p');
         content.classList.add('content');
         content.style.color = this.config.verseColor;
