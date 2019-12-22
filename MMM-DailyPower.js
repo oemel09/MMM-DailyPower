@@ -48,9 +48,9 @@ Module.register('MMM-DailyPower', {
     createVerseImage: function() {
         const imageUrl = this.verse.image;
         let image = document.createElement('img');
-        image.classList.add('image');
+        image.classList.add('daily-power-image');
         if (this.config.blackAndWhite) {
-            image.classList.add('blackAndWhite');
+            image.classList.add('daily-power-blackAndWhite');
         }
         image.src = imageUrl;
         return image;
@@ -65,7 +65,7 @@ Module.register('MMM-DailyPower', {
 
     createVerseContent: function() {
         const content = document.createElement('p');
-        content.classList.add('content');
+        content.classList.add('daily-power-p', 'daily-power-verse-content');
         content.style.color = this.config.verseColor;
         content.style.fontSize = this.config.verseSize;
         content.innerHTML = this.verse.content;
@@ -74,7 +74,7 @@ Module.register('MMM-DailyPower', {
 
     createVerseReference: function() {
         const reference = document.createElement('p');
-        reference.classList.add('reference');
+        reference.classList.add('daily-power-p', 'daily-power-verse-reference');
         reference.style.color = this.config.referenceColor;
         reference.style.fontSize = this.config.referenceSize;
         reference.innerHTML = this.verse.reference;

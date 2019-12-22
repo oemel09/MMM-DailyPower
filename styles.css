@@ -1,21 +1,21 @@
-.image {
+.daily-power-image {
     width: 100%;
 }
 
-.blackAndWhite {
+.daily-power-blackAndWhite {
     filter: grayscale(100%);
 }
 
-p {
+.daily-power-p {
     line-height: 1.3em;
     font-weight: 300;
     margin: 4px;
 }
 
-.content {
+.daily-power-verse-content {
     text-align: left;
 }
 
-.reference {
+.daily-power-verse-reference {
     text-align: right;
 }
