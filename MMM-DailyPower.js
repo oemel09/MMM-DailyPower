@@ -26,7 +26,7 @@ Module.register('MMM-DailyPower', {
 
     getStyles: function() {
         return [
-            'styles.css'
+            this.file('styles.css')
         ];
     },
 
