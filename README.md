@@ -30,7 +30,9 @@ The following properties can be configured:
 | `margin`          | `0 auto`      | Add margin to the widget
 | `translation`     | `de`          | Set the bible translation, see 'available translations'
 | `verseColor`      | `#ccc`        | Color of the verse
-| `referenceColor`  | `#ccc`        | Color of the reference 
+| `verseSize`       | `28px`        | Size of the verse
+| `referenceColor`  | `#ccc`        | Color of the reference
+| `referenceSize`   | `32px`        | Size of the reference 
 | `showImage`       | `true`        | Display an image for the daily verse or keep the space
 | `blackAndWhite`   | `true`        | Black and White image or keep the colors
 

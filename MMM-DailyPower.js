@@ -4,7 +4,9 @@ Module.register('MMM-DailyPower', {
         margin: '0 auto',
         translation: 'de',
         verseColor: '#ccc',
+        verseSize: '28px',
         referenceColor: '#ccc',
+        referenceSize: '32px',
         showImage: true,
         blackAndWhite: true,
     },
@@ -56,17 +58,27 @@ Module.register('MMM-DailyPower', {
 
     createVerseCard: function() {
         const card = document.createElement('div');
+        card.appendChild(this.createVerseContent());
+        card.appendChild(this.createVerseReference());
+        return card;
+    },
+
+    createVerseContent: function() {
         const content = document.createElement('p');
         content.classList.add('content');
         content.style.color = this.config.verseColor;
+        content.style.fontSize = this.config.verseSize;
         content.innerHTML = this.verse.content;
+        return content;
+    },
+
+    createVerseReference: function() {
         const reference = document.createElement('p');
         reference.classList.add('reference');
         reference.style.color = this.config.referenceColor;
+        reference.style.fontSize = this.config.referenceSize;
         reference.innerHTML = this.verse.reference;
-        card.appendChild(content);
-        card.appendChild(reference);
-        return card;
+        return reference;
     },
 
     socketNotificationReceived: function(notification, payload) {
