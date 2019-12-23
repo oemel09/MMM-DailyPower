@@ -19,6 +19,7 @@ module.exports = NodeHelper.create({
                 data += chunk;
             });
             response.on('end', () => {
+                console.log('DailyPower', 'new verse received');
                 this.sendSocketNotification('DAILY_POWER_ON_VERSE_RECEIVED', JSON.parse(data));
             });
         }).on('error', (error) => {
