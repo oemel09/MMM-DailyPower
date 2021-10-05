@@ -1,5 +1,5 @@
 # Daily Power (MagicMirrorModule)
-Display the daily bible verse from [DailyPower](https://dailypower.de) in your [MagicMirror](https://github.com/MichMich/MagicMirror).
+Display the daily bible verse from [DailyPower](https://dailypower.oemel09.de) in your [MagicMirror](https://github.com/MichMich/MagicMirror).
 
 ![Screenshot](screenshot.png)
 
@@ -37,7 +37,7 @@ The following properties can be configured:
 | `blackAndWhite`   | `true`        | Black and White image or keep the colors
 
 ## Available translations
-This page lists all available translations: https://dailypower.de/api/v1/translations
+This page lists all available translations: https://dailypower.oemel09.de/api/v1/translations
 
 Use the `code` as the `translation` in the config.
 
